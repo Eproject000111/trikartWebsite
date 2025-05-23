@@ -1,0 +1,74 @@
+<div class="container-fluid productDetails" style="margin-top:70px">
+    <div class="row">
+        <div class="col-lg-2">
+            <div class="thumbnail-container">
+                <button class="nav-button" (click)="scrollUp()">
+                  ▲
+                </button>
+              
+                <div class="thumbnails" #thumbnailList>
+                  <div 
+                    *ngFor="let image of images; let i = index" 
+                    class="thumbnail" 
+                    [class.active]="i === selectedIndex"
+                    (click)="selectImage(i)">
+                    <img [src]="image" alt="Product Image" />
+                  </div>
+                </div>
+              
+                <button class="nav-button" (click)="scrollDown()">
+                  ▼
+                </button>
+              </div>
+        </div>
+        <div class="col-lg-5">
+            <div class="d-flex align-items-center h-100">
+
+                <div class="card" style="width: 30rem;">
+                    <img src=".../../../../../../assets/img/cat-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="d-flex">
+                            <button type="button" class="btn w-100 btn-outline-secondary">
+                                <i class="fas fa-shopping-cart text-primary mr-1"></i>
+                                Add to Cart
+                            </button>
+
+                            <button type="button" class="btn w-100 btn-primary ml-3">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-5">
+            <div class="productCard">
+                <div class="d-flex flex-column">
+                    <span>Plastic Oil Dispenser, 1000ml, Pack of 1, Clear</span>
+                    <span>₹88</span>
+                </div>
+            </div>
+
+            <div class="productCard mt-3">
+                <div class="d-flex flex-column">
+                    <span>Select Size</span>
+                    <span>Free Size</span>
+                </div>
+            </div>
+
+            <div class="productCard mt-3">
+                <div class="d-flex flex-column">
+                    <span>Product Details</span>
+                    <span>Name : Plastic Oil Dispenser, 1000ml, Pack of 1, Clear</span>
+                    <span>Material : Plastic</span>
+                    <span>Product Breadth : 7 Cm</span>
+                    <span>Product Height : 30 Cm</span>
+                    <span>Product Length : 7 Cm</span>
+                    <span> Net Quantity (N) : Pack Of 1</span>
+                    <span>Oil Dust Proof, Leak Proof Pourer, Wine Dispenser</span>
+                    <span>Country of Origin : India</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

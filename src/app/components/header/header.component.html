@@ -1,0 +1,66 @@
+<div class="w-100 headerSection">
+    <nav class="navbar h-100 navbar-light bg-light">
+        <a class="navbar-brand" routerLink="/">Shopper</a>
+        <ng-container>
+            <form class="form-inline">
+              <div class="input-group w-100">
+                <input type="text" class="form-control" placeholder="Search for products">
+                    <div class="input-group-append">
+                        <span class="input-group-text bg-transparent text-primary">
+                            <i class="fa fa-search"></i>
+                        </span>
+                    </div>
+                </div>
+            </form>
+            <div class="d-flex">
+                <div class="dropdown mr-2">
+                    <button class="btn border dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-user text-primary"></i>
+                    </button>
+                    <div class="dropdown-menu px-2">
+                        <div class="d-flex flex-column mb-3">
+                            <span style="font-size: 14px; font-weight: 500;">Hello User</span>
+                            <span style="font-size: 10px; font-weight: 500;">To access your account</span>
+                        </div>
+                        <button type="button" class="btn btn-primary w-100">Signup</button>
+                        <hr>
+                        <span class="pointer" style="font-size: 16px; font-weight: 500;">My Orders</span>
+                        <hr>
+                        <span class="pointer" style="font-size: 16px; font-weight: 500;">Delete Account</span>
+                    </div>
+                </div>
+    
+                <div class="btn border mr-2 d-flex align-items-center">
+                    <i class="fas fa-heart text-primary"></i>
+                    <span class="badge">0</span>
+                </div>
+                <div class="btn border d-flex align-items-center" routerLink="/cart">
+                    <i class="fas fa-shopping-cart text-primary"></i>
+                    <span class="badge">0</span>
+                </div>
+    
+            </div>
+        </ng-container>
+
+        <ng-container *ngIf="false">
+            <div class="cartStepper">
+                <div class="checkout-steps">
+                    <div class="step active">
+                      <div class="icon">👜</div>
+                      <div class="label">Cart</div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="step">
+                      <div class="icon">📍</div>
+                      <div class="label">Address</div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="step">
+                      <div class="icon">₹</div>
+                      <div class="label">Payment</div>
+                    </div>
+                </div>
+            </div>
+        </ng-container>
+      </nav>
+</div>
