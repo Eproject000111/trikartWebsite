@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NzTableSortOrder } from 'ng-zorro-antd/table';
-import { UserService } from 'src/app/services/users/user.service';
+// import { UserService } from 'src/app/services/users/user.service';
 
 interface ColumnItem {
 	key: number,
@@ -9,6 +9,8 @@ interface ColumnItem {
 
 @Component({
   selector: 'app-users',
+  standalone: true,
+  imports: [],
   templateUrl: './users.component.html',
   styleUrls: ['./users.component.scss']
 })
@@ -35,23 +37,23 @@ export class UsersComponent implements OnInit {
 	]
 
 	constructor(
-		private _userService: UserService
+		// private _userService: UserService
 	){}
 
 	ngOnInit(): void {
-		this.getAllUser()
+		// this.getAllUser()
 	}
 
-	getAllUser(){
-		this._userService.getAllUsers().subscribe({
-			next: (res) => {
-				console.log(res)
+	// getAllUser(){
+	// 	this._userService.getAllUsers().subscribe({
+	// 		next: (res) => {
+	// 			console.log(res)
 
-			},
-			error: (err) => {
-				throw err
-			}
-		})
-	}
+	// 		},
+	// 		error: (err) => {
+	// 			throw err
+	// 		}
+	// 	})
+	// }
 
 }

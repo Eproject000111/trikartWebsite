@@ -13,8 +13,8 @@
                 </div>
             </form>
             <div class="d-flex">
-                <div class="dropdown mr-2">
-                    <button class="btn border dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">
+                <div class="dropdown me-2">
+                    <button class="btn border dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fas fa-user text-primary"></i>
                     </button>
                     <div class="dropdown-menu px-2">
@@ -30,13 +30,19 @@
                     </div>
                 </div>
     
-                <div class="btn border mr-2 d-flex align-items-center">
+                <div class="btn border me-2 d-flex align-items-center position-relative">
                     <i class="fas fa-heart text-primary"></i>
-                    <span class="badge">0</span>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        99+
+                        <span class="visually-hidden">unread messages</span>
+                    </span>
                 </div>
-                <div class="btn border d-flex align-items-center" routerLink="/cart">
+                <div class="btn border d-flex align-items-center position-relative" routerLink="/cart">
                     <i class="fas fa-shopping-cart text-primary"></i>
-                    <span class="badge">0</span>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        99+
+                        <span class="visually-hidden">unread messages</span>
+                    </span>
                 </div>
     
             </div>

@@ -1,8 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { NzModules } from '../../../../antd.module';
+import { ConditionalModule } from '../../../../conditional.module';
 
 @Component({
   selector: 'app-menu-left',
+  standalone: true,
+  imports:[
+	...ConditionalModule,
+	...NzModules['NzLayout'],
+	...NzModules['NzMenu']
+  ],
   templateUrl: './menu-left.component.html',
   styleUrls: ['./menu-left.component.scss']
 })

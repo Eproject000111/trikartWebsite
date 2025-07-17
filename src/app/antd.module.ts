@@ -1,5 +1,3 @@
-import { NgModule } from '@angular/core';
-
 import { IconDefinition } from '@ant-design/icons-angular';
 import * as AllIcons from '@ant-design/icons-angular/icons'
 import { NZ_ICONS } from 'ng-zorro-antd/icon'
@@ -69,89 +67,112 @@ import { NzTreeSelectModule } from 'ng-zorro-antd/tree-select';
 import { NzTypographyModule } from 'ng-zorro-antd/typography';
 import { NzUploadModule } from 'ng-zorro-antd/upload';
 import { NzResizableModule } from 'ng-zorro-antd/resizable';
+import { NzFlexModule } from 'ng-zorro-antd/flex';
 
-const MODULES = [
-  NzAffixModule,
-  NzAlertModule,
-  NzAnchorModule,
-  NzAutocompleteModule,
-  NzAvatarModule,
-  NzBackTopModule,
-  NzBadgeModule,
-  NzButtonModule,
-  NzBreadCrumbModule,
-  NzCalendarModule,
-  NzCardModule,
-  NzCarouselModule,
-  NzCascaderModule,
-  NzCheckboxModule,
-  NzCollapseModule,
-  NzCommentModule,
-  NzDatePickerModule,
-  NzDescriptionsModule,
-  NzDividerModule,
-  NzDrawerModule,
-  NzDropDownModule,
-  NzEmptyModule,
-  NzFormModule,
-  NzGridModule,
-  NzI18nModule,
-  NzIconModule,
-  NzInputModule,
-  NzInputNumberModule,
-  NzLayoutModule,
-  NzListModule,
-  NzMentionModule,
-  NzMenuModule,
-  NzMessageModule,
-  NzModalModule,
-  NzNoAnimationModule,
-  NzNotificationModule,
-  NzPageHeaderModule,
-  NzPaginationModule,
-  NzPopconfirmModule,
-  NzPopoverModule,
-  NzProgressModule,
-  NzRadioModule,
-  NzRateModule,
-  NzResultModule,
-  NzSelectModule,
-  NzSkeletonModule,
-  NzSliderModule,
-  NzSpinModule,
-  NzStatisticModule,
-  NzStepsModule,
-  NzSwitchModule,
-  NzTableModule,
-  NzTabsModule,
-  NzTagModule,
-  NzTimePickerModule,
-  NzTimelineModule,
-  NzToolTipModule,
-  NzTransButtonModule,
-  NzTransferModule,
-  NzTreeModule,
-  NzTreeSelectModule,
-  NzTypographyModule,
-  NzUploadModule,
-  NzWaveModule,
-  NzResizableModule
-]
-
-/**
- * AntDesign Icons
- */
-const antDesignIcons = AllIcons as {
-  [key: string]: IconDefinition
-}
-const icons: IconDefinition[] = Object.keys(antDesignIcons).map(key => antDesignIcons[key])
-
-
-
-@NgModule({
-  declarations: [],
-  imports: [...MODULES],
-  providers: [{ provide: NZ_ICONS, useValue: icons }],
-  exports : [...MODULES]
-})
-export class AntdModule { }
+export const NzModules = {
+    NzUpload : [
+        NzUploadModule,
+    ],
+    NzSpin : [
+        NzSpinModule,
+    ],
+    NzLayout :[
+        NzLayoutModule,
+    ],
+    NzSlider : [
+        NzSliderModule,
+    ],
+    NzMenu : [
+        NzMenuModule,
+    ],
+    NzToolTip : [
+        NzToolTipModule,
+    ],
+    NzDrawer : [
+        NzDrawerModule,
+        NzSpinModule,
+    ],
+    NzTable : [
+        NzTableModule,
+        NzPaginationModule,
+        NzInputModule,
+        NzDropDownModule,
+        NzButtonModule,
+        NzDatePickerModule,
+    ],
+    NzCollapse : [
+        NzCollapseModule
+    ],
+    NzAvatar : [
+        NzAvatarModule
+    ],
+    NzModal : [
+        NzModalModule
+    ],
+    NzPopover : [
+        NzPopoverModule
+    ],
+    NzDivider : [
+        NzDividerModule
+    ],
+    NzTimeline : [
+        NzTimelineModule
+    ],
+    NzTag : [
+        NzTagModule
+    ],
+    NzInput : [
+        NzInputModule
+    ],
+    NzIcon : [
+        NzIconModule
+    ],
+    NzDropDown : [
+        NzDropDownModule
+    ],
+    NzSkeleton : [
+        NzSkeletonModule
+    ],
+    NzBadge : [
+        NzBadgeModule
+    ],
+    NzCarousel : [
+        NzCarouselModule
+    ],
+    NzButton : [
+        NzButtonModule
+    ],
+    NzFlex : [
+        NzFlexModule
+    ],
+    NzDatePicker : [
+        NzDatePickerModule
+    ],
+    NzSwitch : [
+        NzSwitchModule
+    ],
+    NzSelect : [
+        NzSelectModule
+    ],
+    NzTabs : [
+        NzTabsModule
+    ],
+    NzTree : [
+        NzTreeModule
+    ],
+    NzProgress: [
+        NzProgressModule
+    ],
+    NzAlert: [
+        NzAlertModule
+    ],
+    NzPopconfirm: [
+        NzPopconfirmModule
+    ],
+    NzCheckbox: [
+        NzCheckboxModule
+    ],
+    NzRadio: [
+        NzRadioModule
+    ]
+};

@@ -1,7 +1,12 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
+import { ConditionalModule } from '../../../../../conditional.module';
 
 @Component({
   selector: 'app-product-details',
+  standalone: true,
+  imports:[
+    ...ConditionalModule
+  ],
   templateUrl: './product-details.component.html',
   styleUrls: ['./product-details.component.scss']
 })
