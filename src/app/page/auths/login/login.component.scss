@@ -1,0 +1,162 @@
+.loginPage{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background: linear-gradient(rgb(253, 233, 242) 0%, rgb(253, 240, 232) 100%, rgb(253, 240, 232) 100%);
+    overflow-y: auto;
+
+    .loginScreen{
+        margin-top: 112px;
+        margin-bottom: 80px;
+        height: 708px;
+        width: 433px;
+        position: relative;
+        background-color: rgb(255, 255, 255);
+        border-radius: 8px;
+        border: 1px solid rgb(234, 234, 242);    
+
+        .imgSection{
+            background-color: rgb(255, 255, 255);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .loginDetails{
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 0%;
+            height: 508px;
+            -webkit-box-pack: justify;
+            justify-content: space-between;
+            margin-bottom: 0px;
+            .info{
+                background-color: rgb(255, 255, 255);
+                border-radius: 8px;
+                margin-top: 40px;
+                padding-left: 48px;
+                padding-right: 48px;
+                .signupText{
+                    color: rgb(53, 53, 67);
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 28px;
+                    margin: 0px;
+                    padding: 0px;
+                }
+
+                .loginText{
+                    background-color: rgb(255, 255, 255);
+                    border-radius: 8px;
+                    margin-top: 26px;
+                    display: flex;
+                    height: 60px;
+                    align-items: flex-end;
+                }
+                .CountryDropdown{
+                    display: flex;
+                    flex-direction: column;
+                    width: 90px;
+                    margin-right: 12px;
+                }
+                .border{
+                    height: 1px;
+                    background-color: rgb(206, 206, 222);
+                    border-radius: 2px;
+                    width: 100%;
+                }
+
+                .inputInputContainer{
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+                    width: 100%;
+                    padding-top: 6px;
+                }
+                .inputLabel{
+                    color: rgb(139, 139, 163);
+                    position: absolute;
+                    transition: 0.2s;
+                    padding: 8px 0px 7px;
+                    font-size: 16px;
+                }
+
+                .inputInputField{
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    font-style: normal;
+                    border-top: none;
+                    border-right: none;
+                    border-left: none;
+                    border-image: initial;
+                    background-color: transparent;
+                    outline: none;
+                    padding: 8px 0px 7px;
+                    z-index: 1;
+                    color: rgb(139, 139, 163);
+                    border-bottom: 1px solid rgb(206, 206, 222);
+                }
+            }
+
+            .termCondition{
+                letter-spacing: 0.012em;
+                position: absolute;
+                bottom: 0px;
+                left: 104px;
+                right: 104px;
+                font-size: 12px;
+                display: flex;
+                flex-wrap: wrap;
+                -webkit-box-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                justify-content: center;
+                color: rgb(139, 139, 163);
+                font-style: normal;
+                font-weight: 600;
+                font-size: 12px;
+                line-height: 16px;
+                font-family: "Mier demi";
+                margin: 0px 0px 20px;
+                padding: 0px;
+            }
+        }
+
+        .ctnBtn{
+            cursor: pointer;
+            font-style: normal;
+            text-align: center;
+            letter-spacing: 0.0015em;
+            font-size: 15px;
+            line-height: 20px;
+            border-radius: 4px;
+            color: rgb(255, 255, 255);
+            background: rgb(159, 32, 137);
+            border: none;
+            padding: 12px;
+            margin-top: 40px;
+            width: 100%;
+
+            div{
+                display: flex;
+                -webkit-box-pack: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                align-items: center;
+                flex-direction: row;
+                span{
+                    color: rgb(255, 255, 255);
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 24px;
+                    margin: 0px;
+                    padding: 0px;
+                }
+            }
+        }
+    }
+}

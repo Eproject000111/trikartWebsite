@@ -1,0 +1,10 @@
+<nz-sider>
+    <div class="logo"></div>
+      <ul nz-menu nzTheme="dark" nzMode="inline">
+        <ng-container *ngFor="let sidebar of sideMenu">
+          <li nz-menu-item [nzSelected]="sidebar.selected" (click)="sideBarMenuClick(sidebar)">
+            <span>{{sidebar['item']}}</span>
+          </li>
+        </ng-container>
+      </ul>
+</nz-sider>

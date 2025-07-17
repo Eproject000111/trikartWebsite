@@ -1,0 +1,27 @@
+<div class="row topbar h-100 w-100">
+    <div class="col-lg-6">
+
+    </div>
+
+    <div class="col-lg-6">
+        <div class="d-flex flex-column justify-content-center align-items-end h-100">
+            <nz-avatar nzIcon="user" class="pointer"
+                nz-dropdown 
+                nzTrigger="click" 
+                [nzDropdownMenu]="menu"
+            >
+            </nz-avatar>
+
+            <nz-dropdown-menu #menu="nzDropdownMenu">
+                <ul nz-menu>
+                    <li nz-menu-item>
+                        <span>Profile Settings</span>
+                    </li>
+                    <li nz-menu-item>
+                        <span>Logout</span>
+                    </li>
+                </ul>
+              </nz-dropdown-menu>
+        </div>
+    </div>
+</div>

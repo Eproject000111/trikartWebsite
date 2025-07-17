@@ -3,6 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { LayoutModule } from './layouts/layout.module';
 import { RawComponent } from './layouts/raw/raw.component';
+import { LoginComponent } from './page/auths/login/login.component';
+import { LayoutComponent } from './page/admin/layout/layout.component';
 
 const routes: Routes = [
   {
@@ -20,7 +22,22 @@ const routes: Routes = [
       }
     ]
 
-  }
+  },
+  {
+    path: 'admin',
+    component: LayoutComponent,
+    children:[
+      {
+        path:'',
+        loadChildren:() => import('../app/page/admin/admin.module').then((m)=>m.AdminModule)
+      }
+    ]
+  },
+  {
+    path: 'login',
+    component: LoginComponent
+
+  },
 ];
 
 @NgModule({
